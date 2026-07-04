@@ -67,10 +67,14 @@
   .foot .mid{font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif;letter-spacing:3px;color:var(--green);font-size:13px}
   @media print{
     body{background:#fff}
-    .page{box-shadow:none;margin:0;max-width:none}
+    .page{box-shadow:none;margin:0;max-width:none;padding-bottom:0}
     h2.sec{break-after:avoid}
     .finding,.seq,table.cost tr{break-inside:avoid}
-    @page{size:A4;margin:12mm 0}
+    /* in-flow footer hidden in print — the PDF is generated with a repeating
+       footer template at the base of every page (see reports/render-pdf.py) */
+    .foot{display:none}
+    .inner{padding-bottom:8px}
+    @page{size:A4;margin:12mm 0 16mm}
   }
 </style>
 </head>
@@ -215,7 +219,7 @@
     <h3 class="tbl-title">Table 2 — What Changes with a Unified Guideline</h3>
     <table class="cost">
       <tr><th style="width:48%">Today (without a guideline)</th><th>With the unified framework</th></tr>
-      <tr><td>Buildings drift from their drawings; corrections like Osogbo's ₦16.1m remodification recur.</td>
+      <tr><td>Buildings drift from their drawings.</td>
           <td>One controlled model per hall; drawings and site verified against it at fixed inspection points —
           revisions and remodifications are greatly reduced.</td></tr>
       <tr><td>Costs are unpredictable; changes happen verbally and surface later in the account.</td>
@@ -230,9 +234,6 @@
       <tr><td>Experience leaves with the people who carried it.</td>
           <td>Benchmark costs, designs and lessons are recorded after every project and reused on the next.</td></tr>
     </table>
-    <div class="note">NOTE: The framework requires no significant expenditure to adopt — the draft documents and
-    templates are complete. The measurable savings come from what it prevents: abortive work, uncontrolled
-    variations, and remodifications of the kind recently estimated at ₦16,137,000 for a single hall.</div>
 
     <h2 class="sec">08. Proposed Next Steps</h2>
     <ol class="recs">
