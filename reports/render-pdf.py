@@ -54,6 +54,17 @@ def main() -> None:
         html = html.replace(link, "")
     html = html.replace("</head>", f"<style>{css}</style></head>")
 
+    header = f"""
+    <style>{bebas_face(css)}</style>
+    <div style="width:100%;font-family:Arial,sans-serif;font-size:8.5px;color:#4A4F5C;">
+      <div style="margin:4mm 48px 0;padding-bottom:6px;border-bottom:1px solid #D1CBC6;
+                  display:flex;justify-content:space-between;align-items:flex-end;">
+        <span style="font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif;
+                     letter-spacing:3px;color:#1C4636;font-size:10px;">GRAIL MOVEMENT</span>
+        <span>Report &amp; Proposal &middot; RPT-2026-GMN-001</span>
+      </div>
+    </div>"""
+
     footer = f"""
     <style>{bebas_face(css)}</style>
     <div style="width:100%;margin:0 0 4mm;padding:8px 48px 0;border-top:1px solid #D1CBC6;
@@ -81,9 +92,9 @@ def main() -> None:
             path=str(out),
             format="A4",
             display_header_footer=True,
-            header_template="<span></span>",
+            header_template=header,
             footer_template=footer,
-            margin={"top": "12mm", "bottom": "20mm", "left": "0", "right": "0"},
+            margin={"top": "17mm", "bottom": "20mm", "left": "0", "right": "0"},
             print_background=True,
         )
         browser.close()
