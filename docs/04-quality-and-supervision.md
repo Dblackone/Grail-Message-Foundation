@@ -1,9 +1,9 @@
 # Quality Standards & Site Supervision
-**Grail Movement Nigeria — Building Projects**
+**Grail Message Foundation — Building Projects**
 
 | | |
 |---|---|
-| Document no. | GMN-QS-001 |
+| Document no. | GMF-QS-001 |
 | Version | 1.0 (Draft for adoption) |
 | Applies to | All construction activity on Halls of Worship and ancillary buildings |
 | Status | Mandatory once adopted |
@@ -31,7 +31,7 @@ that every hall is built to the same benchmark.
 |---|---|---|
 | **Site diary** (daily) | Weather, labour count, plant on site, work done, deliveries, visitors, instructions given, incidents | Site Supervisor |
 | **[Weekly site report](../templates/site-report.md)** | Progress vs. programme, photos (minimum 6, dated, consistent viewpoints), issues, look-ahead | Site Supervisor → PM |
-| **Site instruction book** | Numbered written instructions to the Contractor (no cost effect without a change order per GMN-CM-001 §6) | Site Supervisor |
+| **Site instruction book** | Numbered written instructions to the Contractor (no cost effect without a change order per GMF-CM-001 §6) | Site Supervisor |
 | **Materials register** | Deliveries with quantities, source, and test/quality certificates | Site Supervisor |
 
 ## 4. Mandatory Hold Points
@@ -88,7 +88,7 @@ Building Code applies, and the Design Lead decides.
   signed issue register.
 - Any injury requiring medical attention, structural distress, or statutory
   stop-order is reported to the PM the **same day** and is an exception event
-  under GMN-PG-001 §5.
+  under GMF-PG-001 §5.
 
 ## 7. Non-Conformance and Escalation
 

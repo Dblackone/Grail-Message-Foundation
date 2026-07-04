@@ -1,9 +1,9 @@
 # Cost Management & Procurement
-**Grail Movement Nigeria — Building Projects**
+**Grail Message Foundation — Building Projects**
 
 | | |
 |---|---|
-| Document no. | GMN-CM-001 |
+| Document no. | GMF-CM-001 |
 | Version | 1.0 (Draft for adoption) |
 | Applies to | All expenditure on Halls of Worship and ancillary building projects |
 | Status | Mandatory once adopted |
@@ -19,7 +19,7 @@ sets those rules. The core principles:
 1. **No budget, no project.** Nothing is bought and no one is mobilised before
    the relevant gate budget is approved.
 2. **Quantities come from the model.** The BOQ is taken off the BIM model
-   (GMN-BIM-001), which prevents both under-ordering and padding.
+   (GMF-BIM-001), which prevents both under-ordering and padding.
 3. **Competition by default.** Works and major supplies are tendered.
 4. **Every naira is traceable.** Payment only against certificates, invoices
    and approved change orders.
@@ -51,7 +51,7 @@ Rules:
 - Produced by the QS from the LOD 300 model at Gate 2, in elemental format
   (substructure, frame, walls, roof, finishes, services, external works,
   preliminaries).
-- Spot-checked manually per GMN-BIM-001 §6.
+- Spot-checked manually per GMF-BIM-001 §6.
 - The priced BOQ is the basis of tender comparison, interim valuations and
   the final account. Lump-sum "provisional" items are kept to a minimum and
   each must be listed and justified.
@@ -77,7 +77,7 @@ Mandatory controls:
 
 ## 5. Payments
 
-The three-signature chain (GMN-PG-001 §3) applies to every payment:
+The three-signature chain (GMF-PG-001 §3) applies to every payment:
 
 1. **Certify** — Site Supervisor confirms the work/materials exist on site.
 2. **Value & recommend** — QS values the work against the BOQ and issues an
@@ -118,14 +118,14 @@ Issued by the QS to the PM and Board every month during Phases 3–5:
   after, they are needed).
 
 Forecast final cost exceeding budget by more than 5% is an exception event
-(GMN-PG-001 §5) and goes to the Board within 7 days.
+(GMF-PG-001 §5) and goes to the Board within 7 days.
 
 ## 8. Final Account
 
 Within 90 days of practical completion the QS agrees the final account with
 the Contractor: measured works, approved change orders, releases of
 retention, and any claims. The final account, with the as-built records
-(GMN-BIM-001 §10), closes the project at Gate 5.
+(GMF-BIM-001 §10), closes the project at Gate 5.
 
 ## 9. Revision History
 

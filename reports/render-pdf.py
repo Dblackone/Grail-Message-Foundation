@@ -9,7 +9,7 @@ rendering so the PDF is reproducible offline.
 Usage:
     python3 render-pdf.py <input.html> <output.pdf> [--ref REF] [--kind KIND]
 
-    --ref   document reference shown in header/footer (default RPT-2026-GMN-001)
+    --ref   document reference shown in header/footer (default RPT-2026-GMF-001)
     --kind  document type shown in the header (default "Report & Proposal")
 
 Requires: playwright (pip install playwright) and a Chromium install.
@@ -55,7 +55,7 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("src", type=pathlib.Path)
     ap.add_argument("out", type=pathlib.Path)
-    ap.add_argument("--ref", default="RPT-2026-GMN-001")
+    ap.add_argument("--ref", default="RPT-2026-GMF-001")
     ap.add_argument("--kind", default="Report & Proposal")
     args = ap.parse_args()
 

@@ -1,9 +1,9 @@
 # BIM Guidelines for Halls of Worship
-**Grail Movement Nigeria — Building Information Modelling Standard**
+**Grail Message Foundation — Building Information Modelling Standard**
 
 | | |
 |---|---|
-| Document no. | GMN-BIM-001 |
+| Document no. | GMF-BIM-001 |
 | Version | 1.0 (Draft for adoption) |
 | Applies to | All design and as-built models of Halls of Worship and ancillary buildings |
 | Status | Mandatory once adopted |
@@ -50,7 +50,7 @@ file.
 ## 4. Naming Conventions
 
 ### 4.1 Project code
-As defined in GMN-PG-001 §6: `GMN-<STATE>-<TOWN>-<NN>`, e.g. `GMN-LA-LAGOS-01`.
+As defined in GMF-PG-001 §6: `GMF-<STATE>-<TOWN>-<NN>`, e.g. `GMF-LA-LAGOS-01`.
 
 ### 4.2 File names
 ```
@@ -64,7 +64,7 @@ As defined in GMN-PG-001 §6: `GMN-<STATE>-<TOWN>-<NN>`, e.g. `GMN-LA-LAGOS-01`.
 | Type | `M3` model, `DR` drawing, `SC` schedule, `RP` report, `BQ` bill of quantities |
 | Revision | `P01, P02…` preliminary; `C01, C02…` issued for construction; `A01…` as-built |
 
-Example: `GMN-EN-ENUGU-01-ADO-AR-M3-0001-P03.ifc`
+Example: `GMF-EN-ENUGU-01-ADO-AR-M3-0001-P03.ifc`
 
 ### 4.3 Drawing numbers
 ```
@@ -72,11 +72,11 @@ Example: `GMN-EN-ENUGU-01-ADO-AR-M3-0001-P03.ifc`
 ```
 Series: `0` general/site, `1` plans, `2` elevations, `3` sections, `4`
 details, `5` schedules, `6` MEP layouts.
-Example: `GMN-EN-ENUGU-01-AR-101` = architecture, ground floor plan.
+Example: `GMF-EN-ENUGU-01-AR-101` = architecture, ground floor plan.
 
 ## 5. Level of Development (LOD) by Phase
 
-| Project phase (GMN-PG-001) | Required LOD | Meaning |
+| Project phase (GMF-PG-001) | Required LOD | Meaning |
 |---|---|---|
 | Phase 1 — Feasibility | LOD 100 | Massing, site placement, capacity check |
 | Phase 2 — Concept design | LOD 200 | Approximate geometry, key spaces sized |
@@ -107,7 +107,7 @@ Before a model or drawing set is issued at any gate:
 Every project repository/drive uses exactly this structure:
 
 ```
-GMN-<STATE>-<TOWN>-<NN>/
+GMF-<STATE>-<TOWN>-<NN>/
 ├── 01-Admin/          (charter, minutes, approvals, contracts)
 ├── 02-Brief/          (capacity brief, feasibility, surveys, soil report)
 ├── 03-Models/
@@ -116,7 +116,7 @@ GMN-<STATE>-<TOWN>-<NN>/
 ├── 04-Drawings/
 │   ├── issued/        (signed PDF issues, by revision)
 │   └── superseded/
-├── 05-Costs/          (cost plans, BOQ, valuations, certificates — see GMN-CM-001)
+├── 05-Costs/          (cost plans, BOQ, valuations, certificates — see GMF-CM-001)
 ├── 06-Site/           (site diaries, weekly reports, photos, instructions)
 ├── 07-Handover/       (as-built model, O&M info, warranties, final account)
 └── 08-Lessons/        (lessons-learned report)
@@ -145,7 +145,7 @@ approved by the PM and filed in `01-Admin/`.
 
 ## 10. As-Built Requirement
 
-Final payment to the design team and contractor is conditional (GMN-PG-001 §6)
+Final payment to the design team and contractor is conditional (GMF-PG-001 §6)
 on delivery of:
 - as-built model (native + IFC) updated to what was actually constructed,
 - as-built drawings (PDF),

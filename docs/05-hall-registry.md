@@ -1,17 +1,17 @@
 # Hall of Worship Registry
-**Grail Movement Nigeria — Building Projects**
+**Grail Message Foundation — Building Projects**
 
 | | |
 |---|---|
-| Document no. | GMN-HR-001 |
+| Document no. | GMF-HR-001 |
 | Version | 1.0 |
 | Purpose | Single register of all Halls of Worship — completed, under construction and planned |
 
 ---
 
-This registry is the index of every Grail Movement building project in
+This registry is the index of every Grail Message Foundation building project in
 Nigeria. **Every hall gets one row and one project code**, and the code links
-to its documentation folder (structure per GMN-BIM-001 §7).
+to its documentation folder (structure per GMF-BIM-001 §7).
 
 Update this file by pull request whenever a project is added or its status
 changes (at minimum at every gate).
@@ -36,7 +36,7 @@ changes (at minimum at every gate).
 
 | Project code | Location (Town, State) | Status | Capacity (seats) | Current phase/gate | BIM model | Notes |
 |---|---|---|---|---|---|---|
-| GMN-XX-EXAMPLE-01 | Example Town, Example State | CONSTRUCTION | 300 | Phase 4 / Gate 3 passed | IFC at Gate 2 ✔ | Example row — replace |
+| GMF-XX-EXAMPLE-01 | Example Town, Example State | CONSTRUCTION | 300 | Phase 4 / Gate 3 passed | IFC at Gate 2 ✔ | Example row — replace |
 | | | | | | | |
 
 ## Existing halls built before this guideline

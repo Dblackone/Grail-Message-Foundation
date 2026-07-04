@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GMN-BIM-001 — BIM Guideline for Halls of Worship</title>
+<title>GMF-BIM-001 — BIM Guideline for Halls of Worship</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -28,7 +28,7 @@
     <div class="title">BIM Guideline for<br>Halls of Worship</div>
 
     <div class="meta">
-      <div><div class="k">Document No.</div><div class="v">GMN-BIM-001</div></div>
+      <div><div class="k">Document No.</div><div class="v">GMF-BIM-001</div></div>
       <div><div class="k">Version</div><div class="v">1.0 — Draft for adoption</div></div>
       <div><div class="k">Date</div><div class="v">04 July 2026</div></div>
       <div><div class="k">Applies To</div><div class="v">All design and as-built models of Halls of Worship and ancillary buildings</div></div>
@@ -74,8 +74,8 @@
 
     <h2 class="sec">04. Naming Conventions</h2>
     <h3 class="tbl-title">4.1 — Project Code</h3>
-    <p class="body">As defined in GMN-PG-001 §6: <code>GMN-&lt;STATE&gt;-&lt;TOWN&gt;-&lt;NN&gt;</code>, e.g.
-    <code>GMN-LA-LAGOS-01</code>.</p>
+    <p class="body">As defined in GMF-PG-001 §6: <code>GMF-&lt;STATE&gt;-&lt;TOWN&gt;-&lt;NN&gt;</code>, e.g.
+    <code>GMF-LA-LAGOS-01</code>.</p>
 
     <h3 class="tbl-title">4.2 — File Names</h3>
     <pre class="tree">&lt;ProjectCode&gt;-&lt;Originator&gt;-&lt;Discipline&gt;-&lt;Type&gt;-&lt;Number&gt;-&lt;Revision&gt;</pre>
@@ -90,17 +90,17 @@
       <tr><td>Revision</td><td><code>P01, P02…</code> preliminary · <code>C01, C02…</code> issued for
         construction · <code>A01…</code> as-built</td></tr>
     </table>
-    <p class="body">Example: <code>GMN-EN-ENUGU-01-ADO-AR-M3-0001-P03.ifc</code></p>
+    <p class="body">Example: <code>GMF-EN-ENUGU-01-ADO-AR-M3-0001-P03.ifc</code></p>
 
     <h3 class="tbl-title">4.3 — Drawing Numbers</h3>
     <pre class="tree">&lt;ProjectCode&gt;-&lt;Discipline&gt;-&lt;Series&gt;&lt;Sheet&gt;</pre>
     <p class="body">Series: <code>0</code> general/site · <code>1</code> plans · <code>2</code> elevations ·
     <code>3</code> sections · <code>4</code> details · <code>5</code> schedules · <code>6</code> MEP layouts.
-    Example: <code>GMN-EN-ENUGU-01-AR-101</code> = architecture, ground floor plan.</p>
+    Example: <code>GMF-EN-ENUGU-01-AR-101</code> = architecture, ground floor plan.</p>
 
     <h2 class="sec">05. Level of Development (LOD) by Phase</h2>
     <table class="cost">
-      <tr><th>Project phase (GMN-PG-001)</th><th style="width:120px">Required LOD</th><th>Meaning</th></tr>
+      <tr><th>Project phase (GMF-PG-001)</th><th style="width:120px">Required LOD</th><th>Meaning</th></tr>
       <tr><td>Phase 1 — Feasibility</td><td>LOD 100</td><td>Massing, site placement, capacity check</td></tr>
       <tr><td>Phase 2 — Concept design</td><td>LOD 200</td><td>Approximate geometry, key spaces sized</td></tr>
       <tr><td>Phase 2 — Technical design (Gate 2)</td><td><strong>LOD 300</strong></td><td>Precise geometry;
@@ -126,7 +126,7 @@
 
     <h2 class="sec">07. Standard Folder Structure</h2>
     <p class="body">Every project repository/drive uses exactly this structure:</p>
-    <pre class="tree">GMN-&lt;STATE&gt;-&lt;TOWN&gt;-&lt;NN&gt;/
+    <pre class="tree">GMF-&lt;STATE&gt;-&lt;TOWN&gt;-&lt;NN&gt;/
 ├── 01-Admin/          (charter, minutes, approvals, contracts)
 ├── 02-Brief/          (capacity brief, feasibility, surveys, soil report)
 ├── 03-Models/
@@ -135,7 +135,7 @@
 ├── 04-Drawings/
 │   ├── issued/        (signed PDF issues, by revision)
 │   └── superseded/
-├── 05-Costs/          (cost plans, BOQ, valuations, certificates — GMN-CM-001)
+├── 05-Costs/          (cost plans, BOQ, valuations, certificates — GMF-CM-001)
 ├── 06-Site/           (site diaries, weekly reports, photos, instructions)
 ├── 07-Handover/       (as-built model, O&amp;M info, warranties, final account)
 └── 08-Lessons/        (lessons-learned report)</pre>
@@ -157,7 +157,7 @@
     clash detection. The BEP is approved by the PM and filed in <code>01-Admin/</code>.</p>
 
     <h2 class="sec">10. As-Built Requirement</h2>
-    <p class="body">Final payment to the design team and contractor is conditional (GMN-PG-001 §6) on delivery
+    <p class="body">Final payment to the design team and contractor is conditional (GMF-PG-001 §6) on delivery
     of:</p>
     <ul class="recs">
       <li>as-built model (native + IFC) updated to what was actually constructed,</li>
@@ -181,7 +181,7 @@
   <div class="foot">
     <span>Grail Message Foundation · Halls of Worship, Nigeria</span>
     <span class="mid">GRAIL MESSAGE FOUNDATION</span>
-    <span>GMN-BIM-001</span>
+    <span>GMF-BIM-001</span>
   </div>
 </div>
 </body>
