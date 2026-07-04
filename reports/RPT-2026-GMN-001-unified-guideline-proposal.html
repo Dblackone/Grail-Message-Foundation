@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unified Project Build Guideline and BIM Standard — Report &amp; Proposal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green:#1C4636; --green-deep:#102A20; --cream:#F5EFE8; --sand:#E8E1D5;
+    --rust:#B85C38; --rust-deep:#9E4F30; --ink:#1A1A1A; --gray:#4A4F5C;
+    --sage:#AECFC0; --line:#D1CBC6;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',-apple-system,'Segoe UI',Arial,sans-serif;color:var(--ink);
+       background:#DDD8D0;font-size:16px;line-height:1.55}
+  .page{max-width:880px;margin:24px auto;background:#fff;box-shadow:0 2px 18px rgba(0,0,0,.18);padding:0 0 30px}
+  /* header band */
+  .band{background:var(--green);color:var(--cream);padding:34px 48px 26px;border-bottom:6px solid var(--rust);
+        display:flex;justify-content:space-between;align-items:flex-start}
+  .brand h1{font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif;font-size:44px;letter-spacing:6px;line-height:.95}
+  .brand .tag{color:var(--sage);letter-spacing:4px;font-size:10.5px;margin-top:8px;text-transform:uppercase}
+  .contact{text-align:right;font-size:12px;color:var(--sand);line-height:1.7}
+  .contact strong{color:var(--cream);font-size:13px;letter-spacing:1px}
+  .inner{padding:34px 48px 0}
+  .kicker{color:var(--rust);font-weight:700;letter-spacing:5px;font-size:11px;text-transform:uppercase}
+  .title{font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif;font-size:46px;line-height:1.02;
+         letter-spacing:1.5px;margin:10px 0 26px;color:var(--ink)}
+  /* meta grid */
+  .meta{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);
+        border:1px solid var(--line);margin-bottom:34px}
+  .meta div{background:var(--cream);padding:12px 16px}
+  .meta .k{font-size:9.5px;font-weight:700;letter-spacing:2px;color:var(--gray);text-transform:uppercase;margin-bottom:3px}
+  .meta .v{color:var(--rust-deep);font-size:13px}
+  /* sections */
+  h2.sec{font-size:13px;letter-spacing:4px;color:var(--green);text-transform:uppercase;
+         border-bottom:1px solid var(--line);padding-bottom:7px;margin:30px 0 14px}
+  p.body{margin-bottom:12px;color:#333}
+  /* findings */
+  .finding{display:flex;gap:16px;background:var(--cream);padding:13px 16px;border-bottom:1px solid var(--line)}
+  .finding .num{color:var(--rust);font-weight:700;font-size:15px;min-width:26px}
+  /* sequence */
+  .seq{display:flex;gap:12px;margin-bottom:11px}
+  .seq .n{color:var(--rust);font-weight:700;min-width:20px}
+  h3.tbl-title{font-size:13.5px;color:var(--rust-deep);letter-spacing:1px;text-transform:uppercase;
+               margin:20px 0 2px;break-after:avoid}
+  /* cost table */
+  table.cost{width:100%;border-collapse:collapse;margin:14px 0 10px;font-size:14px}
+  table.cost th{background:var(--green);color:#fff;text-align:left;padding:9px 12px;letter-spacing:.5px}
+  table.cost td{padding:9px 12px;border:1px solid var(--line);vertical-align:top;background:var(--cream)}
+  table.cost tr.sub td{background:var(--sage);font-weight:700}
+  table.cost tr.total td{background:var(--green);color:#fff;font-weight:700;font-size:14px}
+  .note{color:var(--rust-deep);font-weight:600;font-size:14px;border-left:3px solid var(--rust);
+        padding:8px 14px;background:var(--cream);margin:12px 0 4px}
+  /* recommendations */
+  ol.recs{margin:4px 0 0 20px}
+  ol.recs li{margin-bottom:9px;color:#333}
+  /* authorisation */
+  .auth{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:40px}
+  .auth .slot{border-top:1.5px solid var(--ink);padding-top:8px}
+  .auth .k{font-size:10px;font-weight:700;letter-spacing:2px;color:var(--gray);text-transform:uppercase}
+  .auth .v{color:var(--rust-deep);font-size:12.5px;font-style:italic;margin-top:2px}
+  /* footer */
+  .foot{display:flex;justify-content:space-between;align-items:center;margin-top:44px;
+        padding:14px 48px 0;border-top:1px solid var(--line);font-size:11px;color:var(--gray)}
+  .foot .mid{font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif;letter-spacing:3px;color:var(--green);font-size:13px}
+  @media print{
+    body{background:#fff}
+    .page{box-shadow:none;margin:0;max-width:none}
+    h2.sec{break-after:avoid}
+    .finding,.seq,table.cost tr{break-inside:avoid}
+    @page{size:A4;margin:12mm 0}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="band">
+    <div class="brand">
+      <h1>GRAIL<br>MOVEMENT</h1>
+      <div class="tag">Halls of Worship · Nigeria</div>
+    </div>
+    <div class="contact">
+      <strong>GRAIL MOVEMENT</strong><br>
+      National — All Centres<br>
+      Nigeria
+    </div>
+  </div>
+
+  <div class="inner">
+    <div class="kicker">Report &amp; Proposal — To Leadership</div>
+    <div class="title">A Unified Build Guideline and<br>BIM Standard for all Halls of Worship</div>
+
+    <div class="meta">
+      <div><div class="k">Report Reference</div><div class="v">RPT-2026-GMN-001</div></div>
+      <div><div class="k">Date</div><div class="v">04 July 2026</div></div>
+      <div><div class="k">Classification</div><div class="v">Proposal — For Leadership Review</div></div>
+      <div><div class="k">Prepared By</div><div class="v">Vollmann Akarakiri</div></div>
+      <div><div class="k">Reviewed By</div><div class="v">Jenyo Akarakiri</div></div>
+      <div><div class="k">Department</div><div class="v">Projects</div></div>
+    </div>
+
+    <h2 class="sec">01. Executive Summary</h2>
+    <p class="body">This report is respectfully submitted to the leadership of the Grail Movement in Nigeria. It
+    describes a recurring problem observed across our building projects — the absence of a single, unified project
+    build guideline — and the unnecessary cost, delay and rework this has caused. It then presents a proposal in
+    three parts: <strong>(1)</strong> the adoption of a unified Project Build Guideline for every Hall of Worship
+    project in Nigeria, <strong>(2)</strong> a BIM (Building Information Modelling) standard so that every hall has
+    one accurate digital model from which all drawings and quantities are produced, and <strong>(3)</strong> the
+    progressive production of updated BIM models for the existing Halls of Worship, so that renovation and
+    maintenance can be planned from accurate records rather than rediscovered on site.</p>
+    <p class="body">Before anything else, we ask leadership one question: <strong>does an approved building
+    guideline already exist within the Movement in Nigeria?</strong> If it does, we ask for the opportunity to help
+    update it and to ensure it is passed along to every centre and Hall of Worship. If it does not, we ask for
+    leadership's support and mandate to establish one. A complete draft framework has already been prepared and is
+    ready for review.</p>
+
+    <h2 class="sec">02. Background</h2>
+    <p class="body">There are several Halls of Worship across Nigeria, with more under construction and others
+    requiring renovation or modification. Over more than two years of direct involvement in these projects, a
+    consistent pattern has been observed: each project is planned, designed, costed and supervised in its own way,
+    because there is no common guideline binding them together. The consequences have been unnecessary cost
+    spending, difficulty in achieving project goals, and an overhaul burden in project supervision and control.</p>
+    <p class="body">A recent, concrete example is the Hall of Worship, Osogbo (report
+    <strong>RPT-2026-OSG-001</strong>, 02 July 2026). On-site re-measurement found the building approximately
+    0.6&nbsp;m shorter than the approved plan along the Lobby–Altar axis, and the altar built at 3.00&nbsp;m against
+    3.45&nbsp;m on the plan. The resulting remodification — altar steps, relocation of four doors and eight windows,
+    side-wall structural changes, ceiling and partition works — is estimated at <strong>₦16,137,000</strong>. A
+    significant portion of that sum is not new value: it is the price of correcting divergence between what was
+    drawn, what was built, and what was recorded. This is precisely the class of cost that a unified guideline and
+    accurate building models are designed to prevent.</p>
+
+    <h2 class="sec">03. The Problem — Findings</h2>
+    <div class="finding"><div class="num">01</div><div>There is no unified build guideline in use across projects
+      (or, if one exists, it is not reaching the centres). Each project team improvises its own process for
+      budgeting, contractor selection, supervision and reporting, so quality and cost control depend entirely on who
+      happens to be involved.</div></div>
+    <div class="finding"><div class="num">02</div><div>Drawings and site reality drift apart. Without a single
+      controlled model as the source of truth, plans, sections and schedules are produced separately and disagree —
+      and buildings end up differing from their own approved drawings, as seen at Osogbo. Every later modification
+      then begins with expensive re-measurement and demolition of work already paid for.</div></div>
+    <div class="finding"><div class="num">03</div><div>Costs overrun because changes are informal. Verbal
+      variations, quantities estimated rather than measured, and payments not tied to certified work make the final
+      cost of a project unpredictable and difficult to defend.</div></div>
+    <div class="finding"><div class="num">04</div><div>Supervision and control are inconsistent. There is no common
+      standard for site reporting, inspections before cover-up, or materials verification, so defects are discovered
+      late — when correction is most expensive.</div></div>
+    <div class="finding"><div class="num">05</div><div>Existing halls have no up-to-date as-built records or BIM
+      models. Renovation and maintenance must therefore start from scratch each time, and designs and lessons from
+      one hall cannot be reused to make the next hall faster and cheaper.</div></div>
+
+    <h2 class="sec">04. Our Request to Leadership</h2>
+    <div class="seq"><div class="n">1.</div><div><strong>Is there an existing guideline?</strong> — If the Movement
+      already has an approved building or project guideline in Nigeria, we respectfully ask that it be made
+      available to the Projects team, so we can help review and update it to current realities (material prices, BIM
+      technology, supervision practice) and ensure it is formally passed along to every centre and Hall of Worship
+      project.</div></div>
+    <div class="seq"><div class="n">2.</div><div><strong>If none exists, we ask for leadership's support and
+      mandate</strong> to establish the unified framework proposed in Section&nbsp;05. The draft documents are
+      already prepared; what is needed is leadership's review, adoption, and a directive that all centres follow one
+      guide.</div></div>
+    <div class="seq"><div class="n">3.</div><div><strong>Approval in principle for as-built BIM models of the
+      existing halls</strong> — produced progressively, prioritising halls likely to be renovated or extended, so
+      that future works are planned from accurate records (Section&nbsp;06).</div></div>
+
+    <h2 class="sec">05. The Proposal — A Unified Framework</h2>
+    <p class="body">A complete draft framework has been prepared and is ready for leadership's review. It consists
+    of five guideline documents and four working templates, summarised below.</p>
+
+    <h3 class="tbl-title">Table 1 — Proposed Guideline Documents (drafts completed)</h3>
+    <table class="cost">
+      <tr><th style="width:44px">#</th><th style="width:230px">Document</th><th>What it establishes</th></tr>
+      <tr><td>1</td><td><strong>Project Build Guideline</strong><br>GMN-PG-001</td><td>Six project phases from
+        initiation to handover, each closed by a documented gate approval; defined roles (Project Board, Project
+        Manager, Architect, Quantity Surveyor, Site Supervisor); separation of the person who certifies work from
+        the person who approves payment; a monthly reporting rhythm to leadership.</td></tr>
+      <tr><td>2</td><td><strong>BIM Guideline</strong><br>GMN-BIM-001</td><td>One digital model per hall as the
+        single source of truth. All drawings, schedules and quantities are extracted from the model — they can never
+        disagree with each other. Naming conventions, level of detail per phase, archive formats, and a growing
+        template library so each new hall starts from proven designs.</td></tr>
+      <tr><td>3</td><td><strong>Cost Management &amp; Procurement</strong><br>GMN-CM-001</td><td>Estimates with
+        defined accuracy at each approval gate; Bill of Quantities taken off the model; minimum three bids for major
+        works; written change orders only — no verbal variations; retention and defects liability on every contract;
+        monthly cost forecast to leadership.</td></tr>
+      <tr><td>4</td><td><strong>Quality &amp; Supervision Standard</strong><br>GMN-QS-001</td><td>Nine mandatory hold
+        points (setting-out, foundations, every structural pour, roof, services before cover-up) that must be
+        inspected and released in writing before work proceeds; SON-compliant materials with certificates; daily
+        site diary and weekly photographic reports.</td></tr>
+      <tr><td>5</td><td><strong>Hall of Worship Registry</strong><br>GMN-HR-001</td><td>One register of every hall —
+        completed, under construction and planned — each with a project code, status and link to its documents, so
+        leadership always has a single national overview.</td></tr>
+    </table>
+    <p class="body" style="font-size:13.5px;color:var(--gray)">Supporting templates already prepared: Project
+    Charter, Weekly Site Report, Change Order, and Hold-Point Inspection Checklist — ready for immediate use once
+    the framework is adopted.</p>
+
+    <h2 class="sec">06. BIM Models for Existing Halls of Worship</h2>
+    <p class="body">We propose that every existing Hall of Worship progressively receives an <strong>updated
+    as-built BIM model</strong> — a measured, accurate digital model of the hall as it actually stands. This pays
+    for itself in three ways:</p>
+    <div class="seq"><div class="n">1.</div><div><strong>Reference for new projects</strong> — a modelled hall
+      becomes a template. Seating layouts, altar arrangements, roof structures and finishes that already work are
+      reused, so a new project starts at an advanced stage instead of from a blank page.</div></div>
+    <div class="seq"><div class="n">2.</div><div><strong>Renovation without surprises</strong> — the Osogbo
+      experience shows what it costs when works are planned from drawings that no longer match the building. With an
+      as-built model, the scope and quantities of any modification are measured before a single block is
+      broken.</div></div>
+    <div class="seq"><div class="n">3.</div><div><strong>Easier maintenance</strong> — equipment, services routes
+      and finishes are recorded in one place, so repairs are planned, budgeted and executed faster, by whoever is
+      serving at the time.</div></div>
+    <p class="body">Modelling would be prioritised: first, halls with works currently planned or likely; then halls
+    in active use with ageing services; then the remainder as resources allow.</p>
+
+    <h2 class="sec">07. Expected Benefits</h2>
+    <h3 class="tbl-title">Table 2 — What Changes with a Unified Guideline</h3>
+    <table class="cost">
+      <tr><th style="width:48%">Today (without a guideline)</th><th>With the unified framework</th></tr>
+      <tr><td>Buildings drift from their drawings; corrections like Osogbo's ₦16.1m remodification recur.</td>
+          <td>One controlled model per hall; drawings and site verified against it at fixed inspection points —
+          revisions and remodifications are greatly reduced.</td></tr>
+      <tr><td>Costs are unpredictable; changes happen verbally and surface later in the account.</td>
+          <td>Every change is priced and approved in writing before execution; leadership sees a monthly forecast of
+          final cost, not a surprise at the end.</td></tr>
+      <tr><td>Each project reinvents its own process; quality depends on individuals.</td>
+          <td>Every centre follows the same phases, approvals and standards; supervision is consistent
+          nationwide.</td></tr>
+      <tr><td>Renovation and maintenance of existing halls start from zero information.</td>
+          <td>As-built BIM models make renovation and maintenance measurable, plannable and cheaper to
+          undertake.</td></tr>
+      <tr><td>Experience leaves with the people who carried it.</td>
+          <td>Benchmark costs, designs and lessons are recorded after every project and reused on the next.</td></tr>
+    </table>
+    <div class="note">NOTE: The framework requires no significant expenditure to adopt — the draft documents and
+    templates are complete. The measurable savings come from what it prevents: abortive work, uncontrolled
+    variations, and remodifications of the kind recently estimated at ₦16,137,000 for a single hall.</div>
+
+    <h2 class="sec">08. Proposed Next Steps</h2>
+    <ol class="recs">
+      <li>Leadership confirms whether an existing guideline is in place, and nominates a small committee to review
+        the prepared draft framework (or reconcile it with the existing guideline).</li>
+      <li>The framework is adopted with any amendments, and formally communicated to every centre and Hall of
+        Worship project as the standard to follow.</li>
+      <li>All new and ongoing projects are registered in the Hall of Worship Registry and brought under the
+        guideline at their current stage.</li>
+      <li>As-built BIM modelling of existing halls begins with the highest-priority halls (those with works planned
+        or expected).</li>
+      <li>The guideline is reviewed after the first full project cycle and improved from recorded lessons.</li>
+    </ol>
+
+    <h2 class="sec">09. Conclusion</h2>
+    <p class="body">The Movement's halls deserve to be built well, built once, and cared for with foresight. The
+    problems described here are not failures of dedication — they are the predictable result of working without a
+    common guide. The remedy is ready: a unified build guideline, a single accurate model for every hall, and
+    updated records for the halls we already have. We respectfully ask leadership to confirm whether an existing
+    guideline is in place, and — whether by updating it or adopting the prepared framework — to lend its support and
+    authority so that every future project is delivered to one standard, with fewer revisions, less remodification,
+    and real savings in cost.</p>
+
+    <h2 class="sec">Authorisation</h2>
+    <div class="auth">
+      <div class="slot"><div class="k">Prepared By</div><div class="v">Vollmann Akarakiri</div></div>
+      <div class="slot"><div class="k">Reviewed By</div><div class="v">Jenyo Akarakiri</div></div>
+      <div class="slot"><div class="k">Approved By</div><div class="v">[Name &amp; Title]</div></div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span>Grail Movement · Halls of Worship, Nigeria</span>
+    <span class="mid">GRAIL MOVEMENT</span>
+    <span>RPT-2026-GMN-001</span>
+  </div>
+</div>
+</body>
+</html>
