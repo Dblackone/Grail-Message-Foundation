@@ -1,5 +1,5 @@
 # Weekly Site Progress Report
-*Template GMN-T-02 — completed by the Site Supervisor every week (GMN-QS-001 §3) and sent to the Project Manager.*
+*Template GMF-T-02 — completed by the Site Supervisor every week (GMF-QS-001 §3) and sent to the Project Manager.*
 
 | | |
 |---|---|

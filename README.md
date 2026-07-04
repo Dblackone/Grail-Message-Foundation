@@ -1,7 +1,7 @@
-# Grail Movement Nigeria — Building Projects
+# Grail Message Foundation — Building Projects
 
 Central repository for the planning, design, construction and supervision of
-**Grail Movement Halls of Worship and related buildings in Nigeria**.
+**Grail Message Foundation Halls of Worship and related buildings in Nigeria**.
 
 ## Why this repository exists
 
@@ -15,7 +15,7 @@ led to:
 - designs and documents that could not be reused between projects.
 
 This repository fixes that by providing **one unified guide** that every
-Grail Movement building project in Nigeria must follow, so that projects are
+Grail Message Foundation building project in Nigeria must follow, so that projects are
 **cost-effective, properly supervised, and held to a consistent standard**.
 
 ## What is in this repository

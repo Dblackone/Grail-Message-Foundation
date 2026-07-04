@@ -1,5 +1,5 @@
 # Change Order
-*Template GMN-T-03 — the ONLY way a cost or scope change becomes valid (GMN-CM-001 §6). No verbal variations.*
+*Template GMF-T-03 — the ONLY way a cost or scope change becomes valid (GMF-CM-001 §6). No verbal variations.*
 
 | | |
 |---|---|

@@ -1,9 +1,9 @@
 # Project Charter
-*Template GMN-T-01 — complete this to request Gate 0 approval (see GMN-PG-001 Phase 0). Keep it to 2–3 pages.*
+*Template GMF-T-01 — complete this to request Gate 0 approval (see GMF-PG-001 Phase 0). Keep it to 2–3 pages.*
 
 | | |
 |---|---|
-| Project code | GMN-__-______-__ |
+| Project code | GMF-__-______-__ |
 | Project name | |
 | Date | |
 | Prepared by | |

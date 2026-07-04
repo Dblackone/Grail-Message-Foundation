@@ -1,9 +1,9 @@
 # Project Build Guidelines
-**Grail Movement Nigeria — Building Projects**
+**Grail Message Foundation — Building Projects**
 
 | | |
 |---|---|
-| Document no. | GMN-PG-001 |
+| Document no. | GMF-PG-001 |
 | Version | 1.0 (Draft for adoption) |
 | Applies to | All Halls of Worship and ancillary buildings in Nigeria |
 | Status | Mandatory once adopted |
@@ -12,7 +12,7 @@
 
 ## 1. Purpose
 
-This guideline defines **how every Grail Movement building project in Nigeria
+This guideline defines **how every Grail Message Foundation building project in Nigeria
 is initiated, planned, designed, built and handed over**. Its objectives are:
 
 1. **Cost-effectiveness** — no project starts without a realistic budget, and
@@ -45,13 +45,13 @@ permitted below.
 
 | Role | Responsibility | Notes |
 |---|---|---|
-| **Project Board** | Approves budget, phase gates, and changes above the change threshold. Owns the project. | Minimum 3 members. Represents Grail Movement Nigeria leadership. |
+| **Project Board** | Approves budget, phase gates, and changes above the change threshold. Owns the project. | Minimum 3 members. Represents Grail Message Foundation leadership. |
 | **Project Manager (PM)** | Day-to-day management: programme, budget tracking, coordination, reporting to the Board. | Must not also be the Contractor. |
-| **Design Lead / Architect** | Design, drawings and BIM model per [GMN-BIM-001](02-bim-guidelines.md). | Registered with ARCON where the law requires. |
+| **Design Lead / Architect** | Design, drawings and BIM model per [GMF-BIM-001](02-bim-guidelines.md). | Registered with ARCON where the law requires. |
 | **Structural / MEP Engineers** | Engineering design and construction-stage checks. | COREN-registered where the law requires. |
-| **Quantity Surveyor (QS)** | Bill of quantities, cost plan, valuations, cost reporting per [GMN-CM-001](03-cost-management.md). | Independent from the Contractor. |
-| **Site Supervisor / Clerk of Works** | Daily site presence, inspections and reports per [GMN-QS-001](04-quality-and-supervision.md). | Reports to the PM, not to the Contractor. |
-| **Contractor(s)** | Execution of the works under contract. | Selected per the procurement rules in GMN-CM-001. |
+| **Quantity Surveyor (QS)** | Bill of quantities, cost plan, valuations, cost reporting per [GMF-CM-001](03-cost-management.md). | Independent from the Contractor. |
+| **Site Supervisor / Clerk of Works** | Daily site presence, inspections and reports per [GMF-QS-001](04-quality-and-supervision.md). | Reports to the PM, not to the Contractor. |
+| **Contractor(s)** | Execution of the works under contract. | Selected per the procurement rules in GMF-CM-001. |
 
 **Key control:** the person who approves payment must never be the same
 person who certifies the work, and neither may be the Contractor. This
@@ -81,7 +81,7 @@ guideline.
 ### Phase 2 — Design
 - Concept design → developed design → technical design, each reviewed against
   the brief and the cost plan.
-- Full BIM model produced per [GMN-BIM-001](02-bim-guidelines.md); drawings
+- Full BIM model produced per [GMF-BIM-001](02-bim-guidelines.md); drawings
   are extracted from the model, never drawn separately.
 - Statutory approvals obtained: state development permit / building approval,
   environmental requirements, fire service where applicable.
@@ -93,7 +93,7 @@ guideline.
 ### Phase 3 — Procurement
 - Bill of Quantities produced from the BIM model.
 - Contractor selection by competitive tender per
-  [GMN-CM-001 §4](03-cost-management.md) — minimum three bids for works above
+  [GMF-CM-001 §4](03-cost-management.md) — minimum three bids for works above
   the tender threshold.
 - Contract signed **before** any mobilisation payment; contract must define
   scope, price, programme, retention, defects liability period and
@@ -102,7 +102,7 @@ guideline.
 
 ### Phase 4 — Construction
 - Works executed under continuous supervision per
-  [GMN-QS-001](04-quality-and-supervision.md).
+  [GMF-QS-001](04-quality-and-supervision.md).
 - Monthly: valuation by QS, progress report by PM to the Board, updated cost
   forecast.
 - All changes go through the **change order procedure** — no verbal
@@ -135,10 +135,10 @@ A project is **in exception** (Board must be notified within 7 days) if:
 
 ## 6. Documentation Rules
 
-1. Every project gets a project code: `GMN-<STATE>-<TOWN>-<NN>` (e.g.
-   `GMN-EN-ENUGU-01`) — used on all files, drawings and correspondence.
+1. Every project gets a project code: `GMF-<STATE>-<TOWN>-<NN>` (e.g.
+   `GMF-EN-ENUGU-01`) — used on all files, drawings and correspondence.
 2. All project documents are filed in the standard folder structure defined in
-   [GMN-BIM-001 §7](02-bim-guidelines.md).
+   [GMF-BIM-001 §7](02-bim-guidelines.md).
 3. Decisions of the Board are minuted; instructions to contractors are written
    (site instruction forms); payments reference certificates.
 4. As-built records are a condition of final payment to the Contractor.
@@ -152,7 +152,7 @@ All projects must comply with, as applicable:
   (engineers), **QSRBN** (quantity surveyors) for roles the law reserves.
 - **Standards Organisation of Nigeria (SON)** standards for materials
   (cement, reinforcement, blocks, roofing) — material certificates are checked
-  under GMN-QS-001.
+  under GMF-QS-001.
 - Labour, safety and insurance requirements, including contractor's all-risk
   insurance and workmen's compensation before site possession.
 

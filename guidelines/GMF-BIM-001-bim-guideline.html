@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GMF-BIM-001 — BIM Guideline for Halls of Worship</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+
+  <div class="band">
+    <div class="brand">
+      <h1>GRAIL MESSAGE<br>FOUNDATION</h1>
+      <div class="tag">Halls of Worship · Nigeria</div>
+    </div>
+    <div class="contact">
+      <strong>GRAIL MESSAGE FOUNDATION</strong><br>
+      National — All Centres<br>
+      Nigeria
+    </div>
+  </div>
+
+  <div class="inner">
+    <div class="kicker">Guideline Document — For Adoption</div>
+    <div class="title">BIM Guideline for<br>Halls of Worship</div>
+
+    <div class="meta">
+      <div><div class="k">Document No.</div><div class="v">GMF-BIM-001</div></div>
+      <div><div class="k">Version</div><div class="v">1.0 — Draft for adoption</div></div>
+      <div><div class="k">Date</div><div class="v">04 July 2026</div></div>
+      <div><div class="k">Applies To</div><div class="v">All design and as-built models of Halls of Worship and ancillary buildings</div></div>
+      <div><div class="k">Status</div><div class="v">Mandatory once adopted</div></div>
+      <div><div class="k">Prepared By</div><div class="v">Vollmann Akarakiri</div></div>
+    </div>
+
+    <h2 class="sec">01. Purpose</h2>
+    <p class="body">Every Hall of Worship must have a <strong>single, complete BIM model</strong> that serves as the
+    source of truth for its design, construction and future maintenance. The goals:</p>
+    <div class="finding"><div class="num">01</div><div><strong>Drawings come from the model</strong> — plans,
+      sections, elevations, schedules and quantities are extracted, never drawn separately, so they can never
+      disagree with each other.</div></div>
+    <div class="finding"><div class="num">02</div><div><strong>Accurate quantities</strong> — the Bill of Quantities
+      is taken off the model, which removes a major source of cost overruns.</div></div>
+    <div class="finding"><div class="num">03</div><div><strong>Reusability</strong> — a modelled hall becomes a
+      template library for the next project instead of starting from zero.</div></div>
+    <div class="finding"><div class="num">04</div><div><strong>A permanent record</strong> — as-built models support
+      maintenance, extensions and repairs for decades.</div></div>
+
+    <h2 class="sec">02. Software and File Formats</h2>
+    <table class="cost">
+      <tr><th style="width:190px">Item</th><th>Standard</th></tr>
+      <tr><td>Authoring tool</td><td>Any capable BIM authoring tool (e.g. Revit, ArchiCAD, FreeCAD/BlenderBIM).
+        <strong>One tool per project</strong>, agreed at Gate 1 and recorded in the BIM Execution Plan.</td></tr>
+      <tr><td>Exchange / archive format</td><td><strong>IFC 2x3 or IFC 4</strong> — every issued model must also be
+        exported to IFC so it remains readable regardless of software.</td></tr>
+      <tr><td>Drawings issue format</td><td>PDF (signed issues) + DWG/DXF where a contractor requests it.</td></tr>
+      <tr><td>Coordinates &amp; units</td><td>Real-world site coordinates from the licensed survey plan; project
+        base point at a marked, recoverable site benchmark. Units: <strong>millimetres</strong>; elevations in
+        <strong>metres</strong> above datum.</td></tr>
+    </table>
+    <div class="note">Native files, IFC exports and PDFs are all archived — never only the native file.</div>
+
+    <h2 class="sec">03. Model Structure</h2>
+    <ul class="recs">
+      <li><strong>One federated project, discipline models separated:</strong> Architecture, Structure, MEP
+        (mechanical / electrical / plumbing), Site / External works.</li>
+      <li>Each discipline model is linked, not merged, and clash-checked before every gate (Section 06).</li>
+      <li>Storeys/levels named identically in all discipline models: <code>L00 Ground</code>,
+        <code>L01 First</code>, <code>RF Roof</code>, <code>FD Foundation</code>.</li>
+    </ul>
+
+    <h2 class="sec">04. Naming Conventions</h2>
+    <h3 class="tbl-title">4.1 — Project Code</h3>
+    <p class="body">As defined in GMF-PG-001 §6: <code>GMF-&lt;STATE&gt;-&lt;TOWN&gt;-&lt;NN&gt;</code>, e.g.
+    <code>GMF-LA-LAGOS-01</code>.</p>
+
+    <h3 class="tbl-title">4.2 — File Names</h3>
+    <pre class="tree">&lt;ProjectCode&gt;-&lt;Originator&gt;-&lt;Discipline&gt;-&lt;Type&gt;-&lt;Number&gt;-&lt;Revision&gt;</pre>
+    <table class="cost">
+      <tr><th style="width:130px">Field</th><th>Codes</th></tr>
+      <tr><td>Originator</td><td>Short code for the firm/person, e.g. <code>ADO</code></td></tr>
+      <tr><td>Discipline</td><td><code>AR</code> architecture · <code>ST</code> structure · <code>ME</code>
+        mechanical · <code>EL</code> electrical · <code>PL</code> plumbing · <code>SI</code> site ·
+        <code>ZZ</code> federated</td></tr>
+      <tr><td>Type</td><td><code>M3</code> model · <code>DR</code> drawing · <code>SC</code> schedule ·
+        <code>RP</code> report · <code>BQ</code> bill of quantities</td></tr>
+      <tr><td>Revision</td><td><code>P01, P02…</code> preliminary · <code>C01, C02…</code> issued for
+        construction · <code>A01…</code> as-built</td></tr>
+    </table>
+    <p class="body">Example: <code>GMF-EN-ENUGU-01-ADO-AR-M3-0001-P03.ifc</code></p>
+
+    <h3 class="tbl-title">4.3 — Drawing Numbers</h3>
+    <pre class="tree">&lt;ProjectCode&gt;-&lt;Discipline&gt;-&lt;Series&gt;&lt;Sheet&gt;</pre>
+    <p class="body">Series: <code>0</code> general/site · <code>1</code> plans · <code>2</code> elevations ·
+    <code>3</code> sections · <code>4</code> details · <code>5</code> schedules · <code>6</code> MEP layouts.
+    Example: <code>GMF-EN-ENUGU-01-AR-101</code> = architecture, ground floor plan.</p>
+
+    <h2 class="sec">05. Level of Development (LOD) by Phase</h2>
+    <table class="cost">
+      <tr><th>Project phase (GMF-PG-001)</th><th style="width:120px">Required LOD</th><th>Meaning</th></tr>
+      <tr><td>Phase 1 — Feasibility</td><td>LOD 100</td><td>Massing, site placement, capacity check</td></tr>
+      <tr><td>Phase 2 — Concept design</td><td>LOD 200</td><td>Approximate geometry, key spaces sized</td></tr>
+      <tr><td>Phase 2 — Technical design (Gate 2)</td><td><strong>LOD 300</strong></td><td>Precise geometry;
+        quantities can be taken off</td></tr>
+      <tr><td>Phase 3–4 — Construction</td><td>LOD 350</td><td>Coordination detail, connections, penetrations</td></tr>
+      <tr><td>Phase 5 — Handover</td><td><strong>LOD 500</strong></td><td>Verified as constructed, with equipment
+        data (as-built)</td></tr>
+    </table>
+    <p class="body"><strong>Minimum modelled content at Gate 2 (LOD 300):</strong> foundations, all structural
+    members, walls with true build-ups, roof structure and covering, doors/windows with schedules, floor and
+    ceiling finishes, sanitary fittings, major electrical (distribution boards, generator, lighting layout), water
+    storage and drainage, external works within the site boundary.</p>
+
+    <h2 class="sec">06. Quality Checks Before Every Issue</h2>
+    <div class="seq"><div class="n">1.</div><div><strong>Clash detection</strong> between all discipline models —
+      zero unresolved hard clashes (structure vs. services vs. architecture).</div></div>
+    <div class="seq"><div class="n">2.</div><div><strong>Naming audit</strong> — files, levels and drawing numbers
+      per Section 04.</div></div>
+    <div class="seq"><div class="n">3.</div><div><strong>Quantity sanity check</strong> — QS compares model take-off
+      against manual spot checks on at least concrete, blockwork and roofing.</div></div>
+    <div class="seq"><div class="n">4.</div><div><strong>Model checklist</strong> signed by the Design Lead and
+      filed with the gate submission.</div></div>
+
+    <h2 class="sec">07. Standard Folder Structure</h2>
+    <p class="body">Every project repository/drive uses exactly this structure:</p>
+    <pre class="tree">GMF-&lt;STATE&gt;-&lt;TOWN&gt;-&lt;NN&gt;/
+├── 01-Admin/          (charter, minutes, approvals, contracts)
+├── 02-Brief/          (capacity brief, feasibility, surveys, soil report)
+├── 03-Models/
+│   ├── native/        (authoring files)
+│   └── ifc/           (issued IFC exports, one per gate)
+├── 04-Drawings/
+│   ├── issued/        (signed PDF issues, by revision)
+│   └── superseded/
+├── 05-Costs/          (cost plans, BOQ, valuations, certificates — GMF-CM-001)
+├── 06-Site/           (site diaries, weekly reports, photos, instructions)
+├── 07-Handover/       (as-built model, O&amp;M info, warranties, final account)
+└── 08-Lessons/        (lessons-learned report)</pre>
+
+    <h2 class="sec">08. The Hall Template Library</h2>
+    <ul class="recs">
+      <li>After each project closes, reusable components (seating layouts, door/window families, roof truss types,
+        altar/platform arrangements, standard finishes) are copied into a shared <strong>template library</strong>
+        maintained alongside this guideline.</li>
+      <li>New projects <strong>must start from the template library</strong>, adapting to site and capacity, rather
+        than modelling from scratch.</li>
+      <li>A standard capacity series should be developed over time (e.g. 150-seat, 300-seat, 500-seat reference
+        halls) so that a new project begins at LOD 200 on day one.</li>
+    </ul>
+
+    <h2 class="sec">09. BIM Execution Plan (BEP)</h2>
+    <p class="body">At Gate 1 the Design Lead submits a one-to-two page BEP recording: authoring software and
+    versions, model originators per discipline, exchange schedule, coordinate/benchmark definition, and who runs
+    clash detection. The BEP is approved by the PM and filed in <code>01-Admin/</code>.</p>
+
+    <h2 class="sec">10. As-Built Requirement</h2>
+    <p class="body">Final payment to the design team and contractor is conditional (GMF-PG-001 §6) on delivery
+    of:</p>
+    <ul class="recs">
+      <li>as-built model (native + IFC) updated to what was actually constructed,</li>
+      <li>as-built drawings (PDF),</li>
+      <li>equipment schedules with make/model/capacity for generator, pumps, tanks, distribution boards and fixed
+        AV equipment.</li>
+    </ul>
+
+    <h2 class="sec">11. Revision History</h2>
+    <table class="cost">
+      <tr><th style="width:90px">Version</th><th style="width:130px">Date</th><th>Change</th><th style="width:170px">Author</th></tr>
+      <tr><td>1.0</td><td>04 July 2026</td><td>First issue for adoption</td><td>Vollmann Akarakiri</td></tr>
+    </table>
+
+    <h2 class="sec">Authorisation</h2>
+    <div class="auth">
+      <div class="slot"><div class="k">Prepared By</div><div class="v">Vollmann Akarakiri</div></div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span>Grail Message Foundation · Halls of Worship, Nigeria</span>
+    <span class="mid">GRAIL MESSAGE FOUNDATION</span>
+    <span>GMF-BIM-001</span>
+  </div>
+</div>
+</body>
+</html>

@@ -1,5 +1,5 @@
 # Hold Point Inspection Checklist
-*Template GMN-T-04 — one form per hold point release (GMN-QS-001 §4). Work must NOT proceed past a hold point without this form signed.*
+*Template GMF-T-04 — one form per hold point release (GMF-QS-001 §4). Work must NOT proceed past a hold point without this form signed.*
 
 | | |
 |---|---|
@@ -33,6 +33,6 @@
 ## 4. Signatures
 | Role | Name | Signature | Date |
 |---|---|---|---|
-| Inspected by (per GMN-QS-001 §4 table) | | | |
+| Inspected by (per GMF-QS-001 §4 table) | | | |
 | Site Supervisor | | | |
 | Contractor's representative (acknowledgement) | | | |
