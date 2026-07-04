@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Render the report HTML to PDF with the Grail Movement footer repeated at
-the base of every page.
+"""Render the report HTML to PDF with the Grail Message Foundation header and
+footer repeated on every page.
 
 The footer is drawn with Chromium's native footer template so the page body
 can never overlap it. Google Fonts are fetched and embedded locally before
@@ -60,7 +60,7 @@ def main() -> None:
       <div style="margin:4mm 48px 0;padding-bottom:6px;border-bottom:1px solid #D1CBC6;
                   display:flex;justify-content:space-between;align-items:flex-end;">
         <span style="font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif;
-                     letter-spacing:3px;color:#1C4636;font-size:10px;">GRAIL MOVEMENT</span>
+                     letter-spacing:3px;color:#1C4636;font-size:10px;">GRAIL MESSAGE FOUNDATION</span>
         <span>Report &amp; Proposal &middot; RPT-2026-GMN-001</span>
       </div>
     </div>"""
@@ -70,9 +70,9 @@ def main() -> None:
     <div style="width:100%;margin:0 0 4mm;padding:8px 48px 0;border-top:1px solid #D1CBC6;
                 font-family:Arial,sans-serif;font-size:8.5px;color:#4A4F5C;
                 display:flex;justify-content:space-between;align-items:center;">
-      <span>Grail Movement &middot; Halls of Worship, Nigeria</span>
+      <span>Grail Message Foundation &middot; Halls of Worship, Nigeria</span>
       <span style="font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif;
-                   letter-spacing:3px;color:#1C4636;font-size:10px;">GRAIL MOVEMENT</span>
+                   letter-spacing:3px;color:#1C4636;font-size:10px;">GRAIL MESSAGE FOUNDATION</span>
       <span>RPT-2026-GMN-001</span>
     </div>"""
 
