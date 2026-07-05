@@ -36,7 +36,8 @@ changes (at minimum at every gate).
 
 | Project code | Location (Town, State) | Status | Capacity (seats) | Current phase/gate | BIM model | Notes |
 |---|---|---|---|---|---|---|
-| GMF-XX-EXAMPLE-01 | Example Town, Example State | CONSTRUCTION | 300 | Phase 4 / Gate 3 passed | IFC at Gate 2 ✔ | Example row — replace |
+| GMF-OS-OSOGBO-01 | Osogbo, Osun State | DESIGN | 60 | Remodification — estimate & plan issued | Not yet — as-built model required | Altar & structure remodification per RPT-2026-OSG-001; ground floor plan in [`projects/GMF-OS-OSOGBO-01/`](../projects/GMF-OS-OSOGBO-01/) |
+| GMF-EK-ADO-01 | Ado Ekiti, Ekiti State | DESIGN | ~60 | Proposed floor plan under review | Not yet | Proposed plan (DOVA Architects) in [`projects/GMF-EK-ADO-01/`](../projects/GMF-EK-ADO-01/); altar geometry not yet dimensioned per GMF-DS-001 §3 |
 | | | | | | | |
 
 ## Existing halls built before this guideline
