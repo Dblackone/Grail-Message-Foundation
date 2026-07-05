@@ -27,7 +27,10 @@ Grail Message Foundation building project in Nigeria must follow, so that projec
 | [`docs/03-cost-management.md`](docs/03-cost-management.md) | Budgeting, bill of quantities, procurement and cost-control procedures |
 | [`docs/04-quality-and-supervision.md`](docs/04-quality-and-supervision.md) | Site supervision, inspections, quality benchmarks and reporting |
 | [`docs/05-hall-registry.md`](docs/05-hall-registry.md) | Registry of all Halls of Worship — completed, under construction and planned |
+| [`docs/06-hall-design-standards.md`](docs/06-hall-design-standards.md) | Design standards for every hall — altar area, ceilings, fore hall, seating, materials, storey buildings |
 | [`templates/`](templates/) | Ready-to-use forms: project charter, site report, change order, inspection checklist |
+| [`guidelines/`](guidelines/) | Branded HTML + PDF issues of all guideline documents (GMF-PG/BIM/CM/QS/HR/DS-001) |
+| [`reports/`](reports/) | Reports to leadership (RPT-2026-GMF-001) and the PDF render script |
 
 ## How to use this repository
 
