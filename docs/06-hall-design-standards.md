@@ -4,7 +4,7 @@
 | | |
 |---|---|
 | Document no. | GMF-DS-001 |
-| Version | 1.0 (Draft for adoption — [TBR] values pending ratification) |
+| Version | 1.1 (Draft for adoption — remaining [TBR] values pending ratification) |
 | Applies to | Design of all new Halls of Worship and modifications to existing halls |
 | Status | Mandatory once adopted |
 
@@ -44,9 +44,10 @@ altar wall through the middle of the hall); every dimension is set out from it.
 
 | Parameter | Rule | Standard value |
 |---|---|---|
-| Number of altar steps | Identical in every hall; full width of altar opening; no winders/part-steps | **[TBR]** |
-| Step dimensions | Risers equal ±5 mm; riser 150–170 mm; tread ≥ 300 mm; non-slip | riser [TBR], tread [TBR] |
-| Step plan form & radius | Curved steps struck from the defined centre point on the altar centreline | R = **[TBR]** |
+| Number of altar steps | **5 or 7 risers** — no other count permitted; fixed per hall at Gate 2, never altered on site; criterion for 5 vs 7 (e.g. hall size) **[TBR]**. Full width of altar opening; no winders/part-steps | **5 or 7** |
+| Riser height | Every riser **exactly 100 mm** — all equal, no tolerance stacking; tread ≥ 300 mm (as on Osogbo/Ado plans); non-slip | riser **100 mm**, tread 300 mm |
+| Step colours | 5 risers → **3 green nearest the altar + 2 beige**; 7 risers → **4 green + 3 beige**. Finishes per §9 | 5→3G+2B, 7→4G+3B |
+| Step corner radii | Two radius families only: **all green steps share one corner radius; all beige steps share a second, different radius** — both struck from the same centre point on the altar centreline | R(green) **[TBR]**, R(beige) **[TBR]** |
 | Curved altar wall radius | Same centre point as steps — wall and steps concentric with the altar | R = **[TBR]** |
 | Altar size | Platform depth × width fixed relative to hall width; altar itself per reference | platform [TBR], altar [TBR] |
 | Reading desk | Standard size, top height, slope, position (offset from centreline, setback from step edge); detail in template library | **[TBR]** |
@@ -161,3 +162,4 @@ retained per GMF-QS-001 §5.
 | Version | Date | Change | Author |
 |---|---|---|---|
 | 1.0 | 2026-07-05 | First issue for adoption — [TBR] values pending ratification | Vollmann Akarakiri |
+| 1.1 | 2026-07-05 | Altar step standard ratified: 5 or 7 risers at exactly 100 mm; green/beige split (3+2 or 4+3); one shared corner radius per colour family | Vollmann Akarakiri |
