@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--
+  GRAIL MESSAGE FOUNDATION — CANONICAL DOCUMENT TEMPLATE
+  =====================================================
+  Copy this file to start a new guideline, report or standard. Replace every
+  {{TOKEN}} below, delete the content-block examples you do not need, and keep
+  the masthead, meta card, header/footer and authorisation exactly as they are.
+
+  Render to PDF with:
+      python3 ../reports/render-pdf.py <this>.html <out>.pdf \
+              --ref <DOC-REF> --kind "<Document Kind>"
+
+  All shared styling lives in style.css — do NOT put design rules in the page.
+  See TEMPLATE.md for the full structure spec and the record of corrections.
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{DOC-REF}} — {{Document Title}}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+
+  <!-- ===== MASTHEAD (identical on every document) ===== -->
+  <div class="band">
+    <div class="brand">
+      <h1>GRAIL MESSAGE<br>FOUNDATION</h1>
+      <div class="tag">Halls of Worship · Nigeria</div>
+    </div>
+    <div class="contact">
+      <strong>GRAIL MESSAGE FOUNDATION</strong><br>
+      National — All Centres<br>
+      Nigeria
+    </div>
+  </div>
+
+  <div class="inner">
+    <!-- ===== TITLE BLOCK ===== -->
+    <div class="kicker">{{KICKER — e.g. Guideline Document — For Adoption}}</div>
+    <div class="title">{{Document Title<br>on one or two lines}}</div>
+
+    <!-- ===== META CARD (six cells; last cell is always Prepared By) =====
+         Reports use: Report Reference / Date / Classification /
+                      Prepared By / Department / (empty)
+         Guidelines use: Document No. / Version / Date /
+                      Applies To / Status / Prepared By
+         NOTE: Reviewed By and Approved By were removed — Prepared By only. -->
+    <div class="meta">
+      <div><div class="k">Document No.</div><div class="v">{{DOC-REF}}</div></div>
+      <div><div class="k">Version</div><div class="v">{{1.0 — Draft for adoption}}</div></div>
+      <div><div class="k">Date</div><div class="v">{{DD Month YYYY}}</div></div>
+      <div><div class="k">Applies To</div><div class="v">{{scope}}</div></div>
+      <div><div class="k">Status</div><div class="v">{{Mandatory once adopted}}</div></div>
+      <div><div class="k">Prepared By</div><div class="v">Vollmann Akarakiri</div></div>
+    </div>
+
+    <!-- =====================================================================
+         CONTENT BLOCKS — copy the ones you need, delete the rest.
+         Section numbers are written into the <h2> text (e.g. "01. Purpose").
+         ===================================================================== -->
+
+    <!-- Standard prose section -->
+    <h2 class="sec">01. {{Section Heading}}</h2>
+    <p class="body">{{Paragraph text. Use <strong> for emphasis.}}</p>
+
+    <!-- Numbered / findings panel (cream, rust numerals) — for goals, findings -->
+    <h2 class="sec">02. {{Section Heading}}</h2>
+    <div class="finding"><div class="num">01</div><div>{{Item text.}}</div></div>
+    <div class="finding"><div class="num">02</div><div>{{Item text.}}</div></div>
+
+    <!-- Sequence / ordered steps (rust numerals, no panel) -->
+    <div class="seq"><div class="n">1.</div><div>{{Step text.}}</div></div>
+    <div class="seq"><div class="n">2.</div><div>{{Step text.}}</div></div>
+
+    <!-- Data / parameter table (green header, cream rows) -->
+    <h3 class="tbl-title">{{Optional Table Title}}</h3>
+    <table class="cost">
+      <tr><th style="width:230px">{{Col A}}</th><th>{{Col B}}</th><th style="width:130px">{{Col C}}</th></tr>
+      <tr><td>{{cell}}</td><td>{{cell}}</td><td>{{cell}}</td></tr>
+      <!-- Subtotal row:  <tr class="sub"><td colspan="2">Subtotal</td><td>0</td></tr> -->
+      <!-- Total row:     <tr class="total"><td colspan="2">TOTAL</td><td>0</td></tr> -->
+    </table>
+
+    <!-- Bulleted list -->
+    <ul class="recs">
+      <li>{{Point.}}</li>
+    </ul>
+
+    <!-- Emphasis / note box (rust left border) -->
+    <div class="note">{{NOTE: key rule or caveat.}}</div>
+
+    <!-- Monospace tree / code block (folder structures, naming schemes) -->
+    <pre class="tree">{{code or folder tree}}</pre>
+
+    <!-- ===== REVISION HISTORY (every document) ===== -->
+    <h2 class="sec">{{NN}}. Revision History</h2>
+    <table class="cost">
+      <tr><th style="width:90px">Version</th><th style="width:130px">Date</th><th>Change</th><th style="width:170px">Author</th></tr>
+      <tr><td>1.0</td><td>{{DD Month YYYY}}</td><td>First issue for adoption</td><td>Vollmann Akarakiri</td></tr>
+    </table>
+
+    <!-- ===== AUTHORISATION (Prepared By only — do not add other slots) ===== -->
+    <h2 class="sec">Authorisation</h2>
+    <div class="auth">
+      <div class="slot"><div class="k">Prepared By</div><div class="v">Vollmann Akarakiri</div></div>
+    </div>
+  </div>
+
+  <!-- ===== SCREEN FOOTER (print footer is drawn by render-pdf.py) =====
+       Put the document reference in the last span. -->
+  <div class="foot">
+    <span>Grail Message Foundation · Halls of Worship, Nigeria</span>
+    <span class="mid">GRAIL MESSAGE FOUNDATION</span>
+    <span>{{DOC-REF}}</span>
+  </div>
+</div>
+</body>
+</html>
